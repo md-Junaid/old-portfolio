@@ -8,8 +8,8 @@ app.get("/", function(req, res){
     res.render("portfolio");
 });
 
-app.get("/about", function(req, res){
-    res.render("about");
+app.get("/all_projects", function(req, res){
+    res.render("projects");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

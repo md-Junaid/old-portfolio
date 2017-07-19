@@ -10,7 +10,43 @@ html,body {
     width: 100%;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+#lead-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 15px;
+    color: #fff;
+    transition: 1s ease all;
+}
+
+#lead-down i {
+    -webkit-animation: pulsate 1.5s ease;
+    animation: pulsate 1.5s ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    padding-top: 6.2px;
+}
+
+#lead-dwon i:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#lead-down span {
+    cursor: pointer;
+    display: block;
+    margin:0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #aaa;
+    text-align: center;
+    transition: 1s ease all;
 }
 
 .icon-bar {
@@ -44,6 +80,27 @@ html,body {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
 }
 
+#btn-rounded{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin-left: 465px;
+    /*font-family: Open Sans;*/
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+#btn-rounded:hover{
+    background-color: #fff;
+    color: #333;
+}
+
 section {
 	padding-top:70px;  
     padding-bottom:50px; 
@@ -65,9 +122,13 @@ a.list-group-item.active,[class*='-info'] {
 }
   
 /*#section1 {*/
-/*	background-color: transparent;*/
-/*    color:#dedeff;*/
+/*	line-height: 0.9em*/
 /*}*/
+#section1 h3{
+    color: #999;
+    margin-top:0px;
+    padding-right: 20px;
+}
   
 #section2 {
 	background-color: #e5e5ef;
@@ -115,14 +176,6 @@ a.list-group-item.active,[class*='-info'] {
 .info{
     padding:35px 5px;
     font-family: Open Sans;
-}
-
-.panel-body{
-    padding:0.5px 0px 0px 0px;
-}
-
-.panel-body img{
-    width: 100%;
 }
 
 #section4 {
@@ -225,4 +278,19 @@ footer p{
     background-color:transparent;
 	color:#fff;
 	text-decoration: none;
+}
+
+@keyframes pulsate{
+    0%{
+        -webkit-transform:scale(1, 1); 
+         transform:scale(1, 1);
+        
+    } 50% { 
+        -webkit-transform:scale(1.2, 1.2);
+        transform:scale(1.2, 1.2);
+    } 100% {
+        -webkit-transform:scale(1, 1);
+        transform:scale(1, 1)
+        }
+    
 }
