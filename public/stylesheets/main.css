@@ -105,6 +105,7 @@ section {
 	padding-top:70px;  
     padding-bottom:50px; 
     min-height:calc(100% - 1px);
+    letter-spacing: 0.05em;
 }
 
 .v-center {
@@ -121,13 +122,28 @@ a.list-group-item.active,[class*='-info'] {
     color:#fff;
 }
   
-/*#section1 {*/
-/*	line-height: 0.9em*/
-/*}*/
 #section1 h3{
     color: #999;
     margin-top:0px;
     padding-right: 20px;
+}
+
+#s1{
+    padding-top:70px;  
+    padding-bottom:50px; 
+    height: 400px;
+    color:#fff;
+    letter-spacing: 0.05em;
+}
+
+#s1 a{
+    text-decoration: none;
+}
+
+#pgDetails{
+    padding-left: 0;
+    margin-left:10px;
+    padding-top:80px;
 }
   
 #section2 {
