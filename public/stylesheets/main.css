@@ -84,11 +84,8 @@ html,body {
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    text-align: center;
-    margin-left: 465px;
-    /*font-family: Open Sans;*/
+    background-color: transparent;
     font-size: 1.2em;
-    line-height: 1.2em;
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
