@@ -231,8 +231,8 @@ a.list-group-item.active,[class*='-info'] {
     border: 0;
 }
 
-#cont{
-    padding-left: 200px;
+#cont a{
+    padding-left: 1em;
 }
 
 footer {
