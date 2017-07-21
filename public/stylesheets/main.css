@@ -419,6 +419,9 @@ footer a:hover{
         max-height: auto;
         padding: 100px 15px;
     }
+    #lead-down{
+        display: none;
+    }
     #lead-content{
         position: relative;
         -webkit-transform: none;
@@ -429,8 +432,33 @@ footer a:hover{
     #lead-content h1{
         font-size: 3em;
     }
-    #lead-content h2{
+    #lead-content h3{
         font-size: 1.75em;
+    }
+    #section2 h2{
+        font-size: 1.8em;
+    }
+    #section2 p{
+        font-size: 0.9em;
+    }
+    #section2 img{
+        float: left!important;
+        margin-right: 15px;
+    }
+    #txtarea{
+        width: 100%;
+    }
+    #section4 button{
+        margin-right: 0;
+        /*width: 100%;*/
+    }
+    .copyright{
+        text-align: center;
+        padding-left: 42px;
+    }
+    .social{
+        text-align: center;
+        padding-right: 40px;
     }
 }
 
@@ -438,14 +466,17 @@ footer a:hover{
     #lead-content h1{
         font-size: 2em;
     }
-    #lead-content h2{
+    #lead-content h3{
         font-size: 1.3em;
     }
     #lead-content a{
         padding: 10px 20px;
     }
-    #lead-down{
-        display: none;
+    #section2 h2{
+        font-size: 1.36em;
+    }
+    #section2 img{
+        width: 40%;
     }
     .project-image{
         display: none;
@@ -457,8 +488,9 @@ footer a:hover{
         -webkit-transform:none;
         transform: none;
     }
-    .social{
-        text-align: center;
+    #section4 button{
+        margin-right: 0;
+        width: 100%;
     }
 }
 
@@ -466,24 +498,20 @@ footer a:hover{
     #lead-content h1{
         font-size: 1.5em;
     }
-    #lead-content h2{
+    #lead-content h3{
         font-size: 1em;
+    }
+     #section2 h2{
+        font-size: 1.25em;
+    }
+    #section2 p{
+        font-size: 0.9em;
+    }
+    #section2 img{
+        width: 100%;
     }
     #lead-content a{
         font-size: 0.9em;
         padding: 5px 10px;
-    }
-    #txtarea{
-        width: 100%;
-    }
-    #section4 button{
-        margin-right: 0;
-        width: 100%;
-    }
-    .copyright{
-        padding-left: 70px;
-    }
-    .social{
-        padding-right: 60px;
     }
 }
