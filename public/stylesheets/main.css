@@ -19,7 +19,7 @@ html,body {
 }
 
 .navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#1595db;
+	background-color:#4a8aad;
 }
 
 .navbar-trans a{
@@ -43,6 +43,10 @@ html,body {
     font-size:1.9em;
 }
 
+/*#logo a:hover{*/
+/*    color: rgb(33,125,187);*/
+/*}*/
+
 /* navigation bar ends here */
 
 /* Sections start here */
@@ -51,7 +55,7 @@ section {
 	padding-top:70px;  
     padding-bottom:50px; 
     min-height:calc(100% - 1px);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
 
 .well {
@@ -61,6 +65,14 @@ section {
 a.list-group-item.active,[class*='-info'] {
 	background-color: #168ccc;
     color:#fff;
+}
+
+.hr-style {
+    margin-top: 25px;
+    border: 0;
+    height: 1px;
+    background: #494949;
+    background-image: linear-gradient(to right, #ccc, #494949, #ccc);
 }
 
 .overlay {
@@ -85,18 +97,40 @@ a.list-group-item.active,[class*='-info'] {
     height: 400px;
     background-color: rgba(33,125,187,0.7);
     color:#fff;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     border-bottom: 2px solid #dcd9d9;
+    font-size: 1.1em;
 }
 
 #s1 a{
     text-decoration: none;
+    color: #0d3;
+}
+
+#s1 a:hover{
+    color: #dfdfdf;
+    border-color: #fff;
+}
+
+.myimg{
+    padding-top:70px;
+}
+
+.myimg img{
+    border-radius: 50%;
+    width: 100%;
+    float:right;
 }
 
 #pgDetails{
-    padding-left: 0;
-    margin-left:10px;
+    padding-left: 0px;
+    margin-left:0px;
     padding-top:80px;
+    color:#bcbcbc;
+}
+
+#pgDetails h2{
+    color:#ddd;
 }
 /* /all_projects page section 1 ends here */
 
@@ -182,6 +216,17 @@ a.list-group-item.active,[class*='-info'] {
 
 #section2 img{
     max-height: 360px;
+    -webkit-box-shadow: -2px 4px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 30px 2px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 30px 2px rgba(0,0,0,0.75);
+}
+
+.headings {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    margin:0 0 30px 0;
 }
 
 /* section 2 ends here */
@@ -214,7 +259,7 @@ a.list-group-item.active,[class*='-info'] {
     content: '';
     top: 100%;
     height: 1px;
-    width: 50px;
+    width: 40%;
     left: 0;
     right: 0;
     margin:0 auto;
@@ -228,6 +273,9 @@ a.list-group-item.active,[class*='-info'] {
     overflow: hidden;
     background: #494949;
     border-radius: 4px;
+    -webkit-box-shadow: 6px 7px 33px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 33px 3px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 33px 3px rgba(0,0,0,0.75);
 }
 
 .project-image{
@@ -256,6 +304,19 @@ a.list-group-item.active,[class*='-info'] {
     color: #ccc;
     margin: 0 0 15px 0;
     font-size: 0.9em;
+}
+
+#btn-view{
+    display: inline-block;
+    color: #eee;
+    background-color: #494949;
+    border: 2px solid #666;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+#btn-view:hover{
+    background-color: #666;
 }
 
 /* section 3 ends here */
@@ -292,7 +353,6 @@ a.list-group-item.active,[class*='-info'] {
 
 #section4 button:hover{
     background-color: #666;
-    color: #fff;
 }
 
 #txt{
@@ -366,7 +426,6 @@ footer {
 
 footer a:hover{
     text-decoration: none;
-    color: #fff;
 }
 
 .copyright {
@@ -460,6 +519,16 @@ footer a:hover{
         text-align: center;
         padding-right: 40px;
     }
+    .myimg img{
+        display:none;
+    }
+    #pgDetails h2{
+        font-size: 1.75em;
+    }
+    #pgDetails{
+        font-size: 0.95em;
+        padding-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -492,6 +561,13 @@ footer a:hover{
         margin-right: 0;
         width: 100%;
     }
+    #pgDetails h2{
+        font-size: 1.7em;
+    }
+    #pgDetails{
+        font-size: 0.9em;
+        padding-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -508,10 +584,17 @@ footer a:hover{
         font-size: 0.9em;
     }
     #section2 img{
-        width: 100%;
+        width: 60%;
+        /*height: 100%;*/
     }
     #lead-content a{
         font-size: 0.9em;
         padding: 5px 10px;
+    }
+    #pgDetails h2{
+        font-size: 1.35em;
+    }
+    #pgDetails{
+        font-size: 0.9em;
     }
 }
