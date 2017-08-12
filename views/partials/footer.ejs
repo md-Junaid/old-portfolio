@@ -1,3 +1,4 @@
+
     <!--</div>-->
     <footer id="footer">
         <div class="container">
@@ -33,5 +34,13 @@
     
     <!-- Custom JS for search feature -->
         <script src="/scripts/spyscroll.js" async defer></script>
+        <script>
+                $(function() {
+                    	$('img').on('click', function() {
+                			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+                			$('#enlargeImageModal').modal('show');
+                		});
+                });
+        </script>
    </body>
 </html>

@@ -5,6 +5,11 @@ html,body {
     font-family: Lato;
 }
 
+img {
+    cursor: pointer;
+    cursor: hand;
+}
+
 /* navigation bar starts here */
 
 .icon-bar {
@@ -222,7 +227,7 @@ a.list-group-item.active,[class*='-info'] {
 
 #section2 .projectimg{
     width:100%;
-    max-height: 360px;
+    max-height: 335px;
     margin: 25px auto 0px auto;
     -webkit-box-shadow: 1.5px 1.5px 19px 0px rgba(122,179,222,0.75);
     -moz-box-shadow: 1.5px 1.5px 19px 0px rgba(122,179,222,0.75);
@@ -236,6 +241,7 @@ a.list-group-item.active,[class*='-info'] {
     -webkit-box-shadow: 1.5px 1.5px 19px 0px rgba(122,179,222,0.75);
     -moz-box-shadow: 1.5px 1.5px 19px 0px rgba(122,179,222,0.75);
     box-shadow: 1.5px 1.5px 19px 0px rgba(122,179,222,0.75);
+    
 }
 
 .headings {
@@ -620,6 +626,10 @@ footer a:hover{
     }
     #section2 p{
         font-size: 0.9em;
+    }
+    #section2 li p{
+        font-size: 0.75em;
+        letter-spacing: 0.015em;
     }
     #section2 img{
         width: 60%;

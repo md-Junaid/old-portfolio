@@ -8,9 +8,6 @@
 
 <div id="s1" class="text-justify">
     <div class="container">
-        <!--<div class="col-md-2" style="padding-right:0px;">-->
-        <!--    <div class="myimg pull-right"><img class="img-responsive" src="https://i.imgur.com/0oO0a2Z.jpg"></div>-->
-        <!--</div>-->
         <div class="col-md-10">
             <div id="pgDetails">
                 <h2>Hey there, welcome to my projects page.</h2>
@@ -83,16 +80,20 @@
                 <div class="col-md-6 col-xs-12"><img src="/images/patatap2.JPG" class="projectimg" alt="project output image"></div>
         </div>
         <hr class="hr-style">
-        <h2 class="headings">BlogIt!</h2>
+        <h2 class="headings">YelpCamp</h2>
         <div class="descriptions">
-            <p>Project Description.</p>
+            <p>The YelpCamp application is a fully functional Web App with REST API(with CRUD capabilities) and passport js to authenticate users. 
+            The user can register, login and can also add, edit & delete campgrounds and comments. Google Maps API is used to let User add the location 
+            of the campground All the data associated with the User such as campgrounds, comments and user details are stored in Mlab database(previously 
+            known Mongo lab). This web app is developed using MongoDb, Express, and Node.js or MEN Stack(MEAN without Angular).</p>
+            <p>View the project <a href="https://shrouded-mesa-54500.herokuapp.com/" class="links">here</a>.</p>
         </div>
         <div class="row">
-                <div class="col-md-6 col-xs-12"><img src="" class="projectimg" alt="project output image"></div>
-                <div class="col-md-6 col-xs-12"><img src="" class="projectimg" alt="project output image"></div>
+                <div class="col-md-6 col-xs-12"><img src="/images/yelp1.jpg" class="projectimg" alt="project output image"></div>
+                <div class="col-md-6 col-xs-12"><img src="/images/yelp2.jpg" class="projectimg" alt="project output image"></div>
         </div>
         <hr class="hr-style">
-        <h2 class="headings">YelpCamp</h2>
+        <h2 class="headings">BlogIt!</h2>
         <div class="descriptions">
             <p>Project Description.</p>
         </div>
@@ -102,5 +103,20 @@
         </div>
     </div>
 </section>
+    
+    <!--start modal for images-->
+    <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <img src="" class="enlargeImageModalSource" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--end modal for images-->
 
 <% include partials/footer %>
